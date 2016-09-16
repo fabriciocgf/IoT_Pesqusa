@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/fabriciocgf/Área de Trabalho/projeto/esp01board/esp01board.sch</source>
+    <date>Ter 26 Jul 2016 11:39:59 BRT</date>
+    <tool>Eeschema 4.0.2+e4-6225~38~ubuntu16.04.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>esp01board.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U2">
+      <value>ESP-01v090</value>
+      <libsource lib="ESP8266" part="ESP-01v090"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57961576</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LM317_SOT223</value>
+      <libsource lib="regul" part="LM317_SOT223"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>579616F8</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>MOC3041M</value>
+      <footprint>DIP-6</footprint>
+      <libsource lib="opto" part="MOC3041M"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>579617E7</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10K</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57962574</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>390</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57962641</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>240</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5796270A</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>470</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57962749</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>In 5V</value>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>579634EB</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>390</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5796429C</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>470</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>579642DF</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>TRIAC</value>
+      <libsource lib="device" part="TRIAC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5796189B</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>Saida</value>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5796651C</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>Linha</value>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5796661B</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_PUSH</value>
+      <libsource lib="device" part="SW_PUSH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57977064</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>Fonte</value>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5797780B</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector 01x02</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ESP8266" part="ESP-01v090">
+      <description>ESP8622 ESP-01 module, v090</description>
+      <docs>http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/</docs>
+      <footprints>
+        <fp>ESP-01*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP-01v090</field>
+      </fields>
+      <pins>
+        <pin num="1" name="UTXD" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="CH_PD" type="input"/>
+        <pin num="4" name="GPIO2" type="3state"/>
+        <pin num="5" name="RST" type="input"/>
+        <pin num="6" name="GPIO0" type="3state"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="URXD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="regul" part="LM317_SOT223">
+      <description>Linear Regulator (adjustable)</description>
+      <docs>regulator/lm117.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM317_SOT223</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ADJ" type="input"/>
+        <pin num="2" name="OUT" type="power_out"/>
+        <pin num="3" name="IN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="opto" part="MOC3031M">
+      <aliases>
+        <alias>MOC3032M</alias>
+        <alias>MOC3033M</alias>
+        <alias>MOC3041M</alias>
+        <alias>MOC3042M</alias>
+        <alias>MOC3043M</alias>
+      </aliases>
+      <description>DIP6,  Zero Cross Opto-Triac, Vdrm 250V, Ift 15mA</description>
+      <docs>http://www.fairchildsemi.com/ds/MO/MOC3031M.pdf</docs>
+      <footprints>
+        <fp>DIP-6*</fp>
+        <fp>SMD-6*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MOC3031M</field>
+        <field name="Footprint">DIP-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="SW_PUSH">
+      <description>Button</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_PUSH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="TRIAC">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TRIAC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="regul">
+      <uri>/usr/share/kicad/library/regul.lib</uri>
+    </library>
+    <library logical="opto">
+      <uri>/usr/share/kicad/library/opto.lib</uri>
+    </library>
+    <library logical="ESP8266">
+      <uri>/home/fabriciocgf/kicad/libraries/kicad-ESP8266/ESP8266.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(P3-Pad1)">
+      <node ref="P3" pin="1"/>
+      <node ref="P4" pin="2"/>
+      <node ref="R6" pin="1"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="2" name="3.3V">
+      <node ref="U2" pin="7"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="3" name="Net-(R4-Pad1)">
+      <node ref="U3" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="4" name="Net-(P2-Pad2)">
+      <node ref="R5" pin="1"/>
+      <node ref="U4" pin="1"/>
+      <node ref="P2" pin="2"/>
+    </net>
+    <net code="5" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="6" name="Net-(U2-Pad8)">
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="7" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="8" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="9" name="Net-(R5-Pad2)">
+      <node ref="R5" pin="2"/>
+      <node ref="U3" pin="4"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="10" name="Net-(P2-Pad1)">
+      <node ref="P3" pin="2"/>
+      <node ref="P2" pin="1"/>
+      <node ref="P4" pin="1"/>
+    </net>
+    <net code="11" name="Net-(R6-Pad2)">
+      <node ref="R6" pin="2"/>
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="12" name="Net-(SW1-Pad2)">
+      <node ref="U2" pin="5"/>
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="13" name="GND">
+      <node ref="P1" pin="1"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="14" name="Net-(R1-Pad2)">
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="15" name="Net-(P1-Pad2)">
+      <node ref="U1" pin="3"/>
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="16" name="Net-(R3-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="U2" pin="3"/>
+    </net>
+  </nets>
+</export>
